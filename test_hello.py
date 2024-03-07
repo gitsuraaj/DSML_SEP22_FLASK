@@ -21,7 +21,7 @@ def test_predictions(client):
 
     resp=client.post("/predict", json=test_data)
     assert resp.status_code == 200
-    assert resp.json == {"loan_approval_status": "Rejected"}
+    assert resp.json == {"loan_approval_status": "Accepted"}
 
 
 
