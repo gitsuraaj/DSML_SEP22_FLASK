@@ -6,12 +6,12 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    return "<p>Hello, World!</p>"
+    return "<p>Hello, World! This is version 2</p>"
 
 
 @app.route("/ping", methods=['GET'])
 def ping_something():
-    return "<h1>PINGING .........</H1>"
+    return "<h1>PINGING ......... Version 2</H1>"
 
 #to run a flask app
 #export FLASK_APP=hello.py
